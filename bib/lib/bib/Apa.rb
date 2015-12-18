@@ -2,10 +2,10 @@ require './lib/bib/Lista.rb'
 
 class Apa
     
-        attr_accessor :lista1, :lista2
+        attr_accessor :lista1, :lista2,:lista
         
-        def initialize
-                @lista1 = Lista.new
+        def initialize(lista)
+                @lista1 = lista
                 @lista2 = Lista.new
         end
         
@@ -27,8 +27,8 @@ class Apa
         
         #listas.
         
-        def insertar(other)
-            @lista1.insertar_f(other)
+        def sort
+            #@lista1.insertar_f(other)
             @lista2 = lista1.sort
         end
         

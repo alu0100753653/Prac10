@@ -3,7 +3,7 @@ include Bib
 
 class Libro < Biblio
     
-        def initialize(autores,apellidos,titulo, fechapublicacion, serie = nil,edicion, numeroedicion, isbn)
+        def initialize(autores,apellidos,titulo, fecha, serie = nil,edicion, numeroedicion, isbn)
             @autores = autores
             @apellidos = apellidos
             @titulo = titulo
